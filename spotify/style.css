@@ -1,0 +1,630 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(161, 165, 167);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    gap: 0.7rem;
+}
+
+.side-bar {
+    width: 100%;
+    height: 550px;
+    background-color: black;
+
+}
+
+main {
+    width: 90%;
+    height: 32.7rem;
+    overflow-y: scroll;
+    background-color: rgb(16, 16, 16);
+    border-radius: 15px;
+    overflow: scroll;
+}
+
+.genral,
+.lab {
+    width: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(16, 16, 16);
+}
+
+.genral {
+    height: 10rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: x-large;
+    font-weight: 600;
+    overflow-y: scroll;
+}
+
+.lab {
+    height: 22rem;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.library {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#plus {
+    font-size: 30px;
+    margin-top: -10px;
+    margin-left: 80px;
+}
+
+#logo {
+    width: 7rem;
+}
+
+#logo,
+#sp1 {
+    cursor: pointer;
+}
+
+#sp1:hover {
+    text-decoration: underline;
+    color: rgb(249, 251, 252);
+}
+
+#sp1 {
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+    color: rgb(176, 180, 184);
+    font-weight: 500;
+}
+
+.playlist {
+    width: 90%;
+    height: 45px;
+    background-color: rgb(24, 23, 23);
+    border-radius: 5px;
+    overflow: scroll;
+    cursor: pointer;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.play {
+    padding: 20px;
+    background-color: rgb(44, 42, 42);
+    margin-top: 10px;
+}
+
+.play>span {
+    font-size: large;
+    font-weight: 500;
+    color: white;
+}
+
+.play>p {
+    font-size: medium;
+    font-weight: 400;
+    color: white;
+}
+
+.play>button {
+    font-size: medium;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    color: rgb(43, 42, 42);
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+#sp2 {
+    font-size: small;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#sp2:hover {
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+.blo {
+    display: block;
+}
+
+#bt {
+    align-self: flex-start;
+    background-color: rgb(24, 23, 23);
+    font-size: medium;
+    font-weight: 600;
+    border: solid rgb(190, 183, 183) 2px;
+    border-radius: 20px;
+    padding: 4px 10px;
+    margin: 20px 40px;
+}
+
+#bt:hover {
+    border: 2px solid rgb(244, 239, 239);
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    border-radius: 10px;
+    background-color: rgba(6, 6, 6, 0.425);
+    position: sticky;
+}
+
+.arrow {
+    margin-left: 25px;
+    font-size: larger;
+}
+
+#sp4 {
+    background-color: rgb(8, 8, 8);
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: no-drop;
+}
+.app>span,
+.sign>span {
+    font-weight: 600;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.sign>:nth-child(1):hover {
+    color: white;
+    font-size: 17px;
+}
+.logo{
+    width: 100px;
+    display: none;
+}
+
+.logo>img{
+    width: 100px;
+}
+.app>span,
+.sign>:nth-child(2) {
+    background-color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    color: rgb(13, 13, 13);
+}
+
+.sign>:nth-child(2):hover {
+    padding: 16px 36px;
+}
+.app>span{
+    margin-right: 0px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.menu{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    display: none;
+    
+}
+.app>:nth-child(3){
+    font-size: 30px;
+    color: white;
+}
+.app>:nth-child(3):active{
+   display: block;
+}
+
+.app{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+}
+.app>:nth-child(1){
+    color: white;
+}
+
+.text {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text>h3 {
+    font-size: x-large;
+    font-weight: 600;
+    color: whitesmoke;
+    margin-left: 20px;
+}
+
+.text>span {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.text>span:hover {
+    text-decoration: underline;
+}
+
+.files {
+    width: 100%;
+    height: 57%;
+    margin-top: -30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pic {
+    width: 200px;
+    height: 270px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#playbt {
+    width: 65px;
+    height: 65px;
+    bottom: 65px;
+    position: relative;
+    left: 120px;
+    display: none;
+}
+
+#pic {
+    height: 190px;
+    width: 195px;
+}
+
+#singer {
+    width: 95%;
+    height: 190px;
+    border-radius: 50%;
+}
+
+.pic:hover {
+
+    background-color: rgb(37, 36, 36);
+
+    #playbt {
+        display: inline-block;
+    }
+
+}
+
+.pic>#pic>.no-radius {
+    border-radius: 5px;
+}
+
+.pic>span {
+    margin-top: -5px;
+    color: white;
+    font-weight: 600;
+}
+
+.pic>p {
+    margin: 0px;
+    font-size: small;
+    width: 150px;
+}
+
+.footer {
+    width: 100%;
+    height: 230px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.services,
+.links {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.links{
+align-items: center;
+}
+
+.services>h4 {
+    color: white;
+}
+
+.services>span {
+    display: block;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.services>span:hover {
+    text-decoration: underline;
+    color: white;
+}
+.links>i {
+    background-color: rgb(48, 46, 46);
+    font-size: large;
+    color: white;
+    padding: 10px 11px;
+    border-radius: 50%;
+}
+.links>i:hover {
+    background-color: rgb(82, 79, 79);
+}
+.line {
+    width: 80%;
+    height: 1px;
+    background-color: #6b6a6a;
+    margin-left: 10%;
+}
+#copyright {
+    margin: 50px;
+    font-weight: 500;
+}
+@media (max-width:1000px) {
+    .services>h4 {
+       margin: 2px;
+    }this the last png file  in your phone number for meeting with moeez rashid ali in german for your bussiness man what are your
+    .services>span {
+        margin: 2px;
+    }
+}
+@media (max-width:850px) {
+    .services>h4 {
+        font-size: medium;
+     }
+     .services>span {
+        font-size: small;
+     }
+}
+
+@media (max-width:800px) {
+    .services>h4 {
+        font-size: 12px;
+     }
+
+.footer{
+    margin-top: 40px;
+}
+     
+     .services>span {
+        font-size: 10px;
+     }
+
+}
+
+@media (max-width:600px) {
+    .side-bar {
+        display: none;
+    }
+    .pic:hover {
+        #playbt {
+            display: none
+        }
+    }
+    .text{
+        margin-bottom: 25px;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+        margin-left: -10px;
+    }
+
+    #pic {
+        height: 135px;
+        width: 155px;
+    }
+
+    #singer {
+        width: 85%;
+        height: 135px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .pic {
+        width: 25%;
+        height: 180px;
+    }
+
+    .files {
+        width: 100%;
+        height: 40%;
+    }
+
+    .pic>span {
+        font-weight: 400;
+        position: relative;
+        top: 16px;
+        font-size: small;
+        text-wrap: nowrap;
+    }
+
+    .pic>p {
+        font-size: x-small;
+        position: relative;
+        top: 15px;
+        width: 101%;
+    }
+
+    .text {
+        height: 50px;
+    }
+
+    .text>h3 {
+        font-size: larger;
+        font-weight: 700;
+    }
+
+    .text>span {
+        font-size: smaller;
+    }
+
+    .footer {
+        height: 740px;
+        flex-direction: column;
+        margin-top: 20px;
+
+    }
+
+    .services,
+    .links {
+        width: 100%;
+    }
+
+    .services>h4 {
+        font-size: large;
+        font-weight: 400;
+    }
+
+    .services>span {
+        font-size: medium;
+    }
+
+    #copyright {
+        margin: 2%;
+    }
+
+    .links>i {
+        font-size: medium;
+        padding: 8px 9px;
+    }
+
+    .line {
+        margin-top: 20px;
+    }
+}
+@media (max-width:550px) {
+
+    #pic {
+        height: 125px;
+        width: 125px;
+    }
+
+    #singer {
+        height: 115px;
+    }
+
+    .pic {
+        width: 25%;
+        height: 160px;
+    }
+}
+@media (max-width:500px) {
+    .navbar {
+        height: 3rem;
+        border-radius: 0px;
+    }
+
+    .arrow {
+        display: none;
+    }
+    .sign{
+        display: none;
+    }
+    .files {
+        overflow: scroll;
+        flex-wrap: nowrap;
+        gap: 20px;
+        height: 50%;
+    }
+
+    #pic {
+        height: 70%;
+        width: 150px;
+    }
+
+    #singer {
+        height: 160px;
+        width: 150px;
+    }
+
+    .pic {
+        width: 250px;
+        height: 250px;
+    }
+    .text>h3{
+        font-size:x-large;
+    }
+
+    .pic>span {
+        font-weight: 700;
+        font-size: 15px;
+
+    }
+    .text>span {
+        display: none;
+    }
+    .pic>p {
+        display: none;
+    }
+    .footer {
+        height: 730px;
+        margin-top: 20px;
+
+    }
+
+    .services,
+    .links {
+        width: 100%;
+    }
+    .links{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .links>i{
+        font-size: x-large;
+    }
+    .services>h4 {
+        font-size: larger;
+        font-weight: 400;
+    }
+
+    .services>span {
+        font-size: medium;
+    }
+
+    #copyright {
+        margin: 2%;
+        font-size: medium;
+    }
+
+    .logo,.app{
+        display: flex;
+    }
+}
